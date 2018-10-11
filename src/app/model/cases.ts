@@ -16,12 +16,3 @@ export class CaseStatus{
     StatusTitle:string;
 }
 
-export class UploadCodingDoc{
-    UploadCodingDocId:string;
-    PatientName:string;
-    MRN:string
-    UploadCodingDoc:string;
-    ChargeQuery:string;
-    UserId:string;
-    CaseId:string;
-}
