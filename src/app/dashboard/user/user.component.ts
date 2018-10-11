@@ -79,8 +79,6 @@ debugger;
     {label: 'Permission', icon: 'fa fa-fw fa-calendar',command: (event: Event) =>this.navigateToPath("userpermission") },
     {label: 'Role', icon: 'fa fa-fw fa-book',command: (event: Event) =>this.navigateToPath("changePassword")},
     {label: 'Password', icon: 'fa fa-fw fa-support',command: (event: Event) =>this.navigateToPath("changePassword")},
-    {label: 'Coding', icon: 'fa fa-fw fa-support',command: (event: Event) =>this.navigateToPath("Coding")},
-   
     // {label: 'Social', icon: 'fa fa-fw fa-twitter'}
     ];
   

@@ -12,7 +12,7 @@
     <app-account-sidebar></app-account-sidebar>
  </div>
 
-    <div class="col-sm-2">
+    <div class="col-sm-3">
       <div class="shadow_body">
 
             <p-table #dt [columns]="cols" [value]="users" [paginator]="true" [rows]="10" selectionMode="single"  (onRowSelect)="onRowSelect($event)" >
@@ -229,7 +229,7 @@
 
 
 </div>
-<div class="col-sm-8">
+<div class="col-sm-7">
     <div class="add_patient"><button class="btn btn-primary center-block" (click)="openModal(template)"><i class="fa fa-plus"></i>Add new user</button></div>
     <!-- <p-tabMenu [model]="tabs" ></p-tabMenu> -->
 
@@ -310,9 +310,6 @@
             <tab heading="Cases" (click)="getSelectedTab('case')">
                 <app-userscases></app-userscases>
                 
-                 </tab>
-                 <tab heading="Coding" (click)="getSelectedTab('Coding')">
-                   <app-useruploadcoding></app-useruploadcoding>
                  </tab>
         </tabset>
     <!--  -->
