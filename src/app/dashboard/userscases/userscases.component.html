@@ -20,10 +20,9 @@
                     </tr>
                     <tr>
                         <th *ngFor="let col of columns" [ngSwitch]="col.field">
-                            <input *ngSwitchCase="'PatientName'" pInputText type="text" (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
-                            <input *ngSwitchCase="'Physician'" pInputText type="text" (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+                            <input *ngSwitchCase="'Title'" pInputText type="text" (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+                            <input *ngSwitchCase="'CompanyName'" pInputText type="text" (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
                             <input *ngSwitchCase="'MRN'" pInputText type="text" (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
-                            <input *ngSwitchCase="'DOS'" pInputText type="text" (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
                            
                             <p-multiSelect *ngSwitchCase="'UserType'" [options]="UserTypesFilter" defaultLabel="User Types" (onChange)="dt.filter($event.value, col.field, 'in')"></p-multiSelect>
                             <p-multiSelect *ngSwitchCase="'Status'" [options]="CaseStatusFilter" defaultLabel="Status" (onChange)="dt.filter($event.value, col.field, 'in')"></p-multiSelect>
@@ -41,20 +40,17 @@
                             {{rowData[col.field]}}
                         </td> -->
                         <td>
-                                    {{rowData.PatientName}}    
+                                    {{rowData.Title}}    
                         </td>
                         <td>                
-                                    {{rowData.Physician}}
+                                    {{rowData.CompanyName}}
                         </td>
                         <td>               
-                                    {{rowData.MRN}}
+                                    {{rowData.UserType}}
                         </td>
                         <td>               
-                                {{rowData.DOS}}
+                                {{rowData.MRN}}
                     </td>
-                    <td>               
-                            {{rowData.UserType}}
-                </td>
                        
                         <td pEditableColumn  class="cursor">
                             <p-cellEditor>

@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginModule } from './login/login.module';
+
 //components
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +23,7 @@ import {DataExchangeService} from './services/data-exchange.service';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import {MenubarModule} from 'primeng/menubar';
 import {MenuModule} from 'primeng/menu';
+import {CalendarModule} from 'primeng/calendar';
 
 
 
@@ -43,7 +45,8 @@ import {MenuModule} from 'primeng/menu';
     ChartModule,
     AngularMultiSelectModule,
     MenubarModule,
-    MenuModule
+    MenuModule,
+    CalendarModule
 
   ],
   providers: [HttpClient, AppSettingsService,AuthenticationService, AuthGuard,DataExchangeService],
